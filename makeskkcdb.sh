@@ -1,3 +1,4 @@
 #!/bin/sh
-./skktocdbm.sh < /usr/local/share/skk/SKK-JISYO.L | \
-	cdb -c -t - SKK-JISYO.L.cdb
+cat ../skk/dic/SKK-JISYO.* > SKK-JISYO.ALL
+./skktocdbm.sh < ./SKK-JISYO.ALL | \
+	cdb -c -t - SKK-JISYO.ALL.cdb
