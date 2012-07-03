@@ -26,9 +26,9 @@
  * note: the macro was JISHO_FILE in 1.x
  *       spelling changed from JISHO to JISYO
  */
-#ifndef JISYO_FILE
-#define JISYO_FILE	"/usr/local/share/skk/SKK-JISYO.L.cdb"
-#endif /* JISYO_FILE */
+/*#ifndef JISYO_FILE*/
+#define JISYO_FILE	"/tmp/SKK-JISYO.ALL.cdb"
+/* #endif */ /* JISYO_FILE */
 
 #define	BUFSIZE		(1024)	/* max size of a request */
 #define DATASIZE	(4096)	/* max size of a result */
@@ -47,7 +47,7 @@
 /* these strings must be terminated with space */
 #define VERSION "dbskkd-cdb-2.00 " 
 #define DUMMYHOSTNAME "novalue: "
-
+#define VERBOSE_MSG '1'
 /*
  * define VERBOSE_MSG 
  * if explicit error messages are needed

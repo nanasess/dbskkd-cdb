@@ -1,9 +1,9 @@
 # dbskkd-cdb Makefile
 
-CC = cc -Wall -O2 -g -I/usr/local/include
+CC = cc -Wall -O2 -g -I/usr/local/include -I/opt/local/include
 COMPAT =
-CDBLIB = /usr/local/lib/libcdb.a
-INSTALLDIR = /usr/local/libexec
+CDBLIB = /opt/local/lib/libcdb.a
+INSTALLDIR = $(HOME)/bin
 
 .c.o:
 	$(CC) $(COMPAT) $(PRIVATE) -c $*.c
