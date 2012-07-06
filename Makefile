@@ -13,7 +13,7 @@ JISYOFILE = $(HOME)/Dropbox/ddskk/$(JISYOCDB)
 all: 	dbskkd-cdb create-cdb create-tcprule
 
 clean:
-	/bin/rm -f dbskkd-cdb *.o SKK-JISYO.ALL *.cdb
+	/bin/rm -f dbskkd-cdb *.o SKK-JISYO.ALL* *.cdb
 
 create-cdb:
 	/bin/sh makeskkcdb.sh
